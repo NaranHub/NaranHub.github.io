@@ -1,0 +1,5 @@
+# Ignore documentation
+/doc
+
+# Ignore MacOS's system files
+.DS_Store
