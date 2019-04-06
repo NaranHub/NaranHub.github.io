@@ -381,8 +381,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  /* padding-top: 4em; */
-  padding-bottom: 4em;
+  padding-top: 4em;
+  /* padding-bottom: 4em; */
   clear: both;
   width: 100%;
   display: block; }
@@ -396,13 +396,14 @@ body.offcanvas {
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
-      padding-bottom: 8em;
+      /* padding-bottom: 8em; */
       padding-left: 1em;
       padding-right: 1em;
    } }
 
-.colorlib-about {
-  padding-top: 4em;
+.colorlib-skills,
+.colorlib-services {
+  padding-top: 0em;
 }
 
 .author-img {
