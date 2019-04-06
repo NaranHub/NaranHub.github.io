@@ -228,7 +228,8 @@ figure {
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; } }
+    } 
+  }
 
 #colorlib-hero {
   min-height: 500px;
@@ -237,7 +238,7 @@ figure {
   float: left;
   /* margin-bottom: 10em; */
   clear: both; }
-  #colorlib-hero .flexslider {
+#colorlib-hero .flexslider {
     border: none;
     z-index: 1;
     margin-bottom: 0; }
@@ -395,7 +396,10 @@ body.offcanvas {
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
-      padding-bottom: 8em; } }
+      padding-bottom: 8em;
+      padding-left: 1em;
+      padding-right: 1em;
+   } }
 
 .colorlib-about {
   padding-top: 4em;
