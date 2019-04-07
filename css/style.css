@@ -108,7 +108,7 @@ figure {
     font-size: 12px;
     text-transform: uppercase; }
   #colorlib-aside #colorlib-logo {
-    text-align: right;
+    text-align: center;
     font-weight: 700;
     font-size: 22px;
     margin-bottom: .5em;
@@ -186,6 +186,17 @@ figure {
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
+  #colorlib-aside .colorlib-social-media {
+    display: block;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 1.5em; }
+    #colorlib-aside .colorlib-social-media a {
+      display: inline-block;
+      font-size: 30px;
+      padding-right: 0.5em;
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 40px; }
   #colorlib-aside .colorlib-footer {
     font-size: 15px;
     text-align: center;
