@@ -417,6 +417,10 @@ body.offcanvas {
   padding-top: 0em;
 }
 
+.colorlib-skills .colorlib-heading {
+  padding-top: 3em;
+}
+
 .author-img {
   background-size: cover;
   background-position: center center;
@@ -429,7 +433,8 @@ body.offcanvas {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: #7b7b7b;
+  /* color: #7b7b7b; */
+  color: black;
   line-height: 1.8;
   position: relative; }
   .colorlib-heading span {
