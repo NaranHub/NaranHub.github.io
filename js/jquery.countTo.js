@@ -22,6 +22,7 @@
     speed: 1000,           // how long it should take to count between the target numbers
     refreshInterval: 100,  // how often the element should be updated
     decimals: 0,           // the number of decimal places to show
+    plus: false,           // display a + symbol at the end of the count
     formatter: formatter,  // handler for formatting the value before rendering
     onUpdate: null,        // callback method for every time the element is updated
     onComplete: null       // callback method for when the element finishes updating
@@ -40,7 +41,8 @@
       to:              this.$element.data('to'),
       speed:           this.$element.data('speed'),
       refreshInterval: this.$element.data('refresh-interval'),
-      decimals:        this.$element.data('decimals')
+      decimals:        this.$element.data('decimals'),
+      plus:            this.$element.data('plus')
     };
 
     var keys = Object.keys(options);

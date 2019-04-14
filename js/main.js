@@ -39,9 +39,13 @@
 
 	var counter = function() {
 		$('.js-counter').countTo({
-			 formatter: function (value, options) {
-	      return value.toFixed(options.decimals);
-	    },
+			formatter: function (value, options) {
+				var finalValue = value.toFixed(options.decimals);
+				if (finalValue >= options.to && options.plus) {
+					finalValue += '+';
+				}
+	      		return finalValue;
+			}
 		});
 	};
 
@@ -51,7 +55,7 @@
 			$('#colorlib-counter').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
+					setTimeout(counter , 400);					
 					$(this.element).addClass('animated');
 				}
 			} , { offset: '90%' } );
