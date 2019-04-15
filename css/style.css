@@ -1311,7 +1311,6 @@ body.offcanvas {
   appearance: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: transparent;
   border: 1px solid #e6e6e6 !important;
   background: white;
   height: 54px;
@@ -1328,8 +1327,8 @@ body.offcanvas {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-color: transparent;
-    background: #f0f0f0; }
+    border: 2px solid #2c98f0 !important;
+    border-color: transparent; }
 
 #message {
   height: 200px; }
