@@ -393,7 +393,7 @@ body.offcanvas {
 .colorlib-services,
 .colorlib-contact {
   padding-top: 4em;
-  /* padding-bottom: 4em; */
+  padding-bottom: 4em;
   clear: both;
   width: 100%;
   display: block; }
@@ -406,7 +406,7 @@ body.offcanvas {
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
-      padding-top: 5em;
+      /* padding-top: 5em; */
       /* padding-bottom: 8em; */
       padding-left: 1em;
       padding-right: 1em;
@@ -415,6 +415,10 @@ body.offcanvas {
 .colorlib-skills,
 .colorlib-services {
   padding-top: 0em;
+}
+
+.colorlib-contact {
+  background: #f2f3f7;
 }
 
 .colorlib-skills .colorlib-heading {
@@ -852,7 +856,7 @@ body.offcanvas {
     height: 100px;
     display: table;
     text-align: center;
-    background: #f2f3f7;
+    background: white;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -886,7 +890,7 @@ body.offcanvas {
     font-size: 40px; }
     @media screen and (max-width: 1200px) {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-        font-size: 28px; } }
+        font-size: 54px; } }
 
 .blog-entry {
   width: 100%;
@@ -1308,7 +1312,7 @@ body.offcanvas {
   box-shadow: none;
   background: transparent;
   border: transparent;
-  background: #f2f3f7;
+  background: white;
   height: 54px;
   font-size: 16px;
   font-weight: 400;
