@@ -857,6 +857,7 @@ body.offcanvas {
     display: table;
     text-align: center;
     background: white;
+    border: 1px solid #e6e6e6 !important;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -1311,7 +1312,7 @@ body.offcanvas {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: transparent;
-  border: transparent;
+  border: 1px solid #e6e6e6 !important;
   background: white;
   height: 54px;
   font-size: 16px;
@@ -1331,7 +1332,7 @@ body.offcanvas {
     background: #f0f0f0; }
 
 #message {
-  height: 130px; }
+  height: 200px; }
 
 .colorlib-nav-toggle {
   cursor: pointer;
