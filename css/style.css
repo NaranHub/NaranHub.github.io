@@ -67,12 +67,12 @@ figure {
   color: #fff;
   background: #2c98f0; }
 
-#colorlib-page {
+#naran-page {
   width: 100%;
   overflow: hidden;
   position: relative; }
 
-#colorlib-aside {
+#naran-aside {
   padding-top: 3em;
   padding-bottom: 40px;
   float: left;
@@ -85,7 +85,7 @@ figure {
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    #colorlib-aside {
+    #naran-aside {
       width: 300px;
       -moz-transform: translateX(-300px);
       -webkit-transform: translateX(-300px);
@@ -93,7 +93,7 @@ figure {
       -o-transform: translateX(-300px);
       transform: translateX(-300px);
       padding-top: 4em; } }
-  #colorlib-aside .author-img {
+  #naran-aside .author-img {
     width: 150px;
     height: 150px;
     margin: 0 auto;
@@ -102,36 +102,36 @@ figure {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
-  #colorlib-aside .position {
+  #naran-aside .position {
     display: block;
     margin-bottom: 2em;
     font-size: 12px;
     text-transform: uppercase; }
-  #colorlib-aside #colorlib-logo {
+  #naran-aside #naran-logo {
     text-align: center;
     font-weight: 700;
     font-size: 22px;
     margin-bottom: .5em;
     display: block;
     width: 100%; }
-    #colorlib-aside #colorlib-logo a {
+    #naran-aside #naran-logo a {
       display: block;
       text-align: center;
       color: #000;
       padding-right: .3em; }
-  #colorlib-aside #colorlib-main-menu {
+  #naran-aside #naran-main-menu {
     display: block;
     width: 100%; }
-    #colorlib-aside #colorlib-main-menu .collapse {
+    #naran-aside #naran-main-menu .collapse {
       display: block !important; }
-    #colorlib-aside #colorlib-main-menu ul {
+    #naran-aside #naran-main-menu ul {
       text-align: center;
       margin: 0;
       padding: 0; }
       @media screen and (max-width: 768px) {
-        #colorlib-aside #colorlib-main-menu ul {
+        #naran-aside #naran-main-menu ul {
           margin: 0 0 2em 0; } }
-      #colorlib-aside #colorlib-main-menu ul li {
+      #naran-aside #naran-main-menu ul li {
         margin: 0 0 10px 0;
         padding: 0;
         list-style: none;
@@ -139,7 +139,7 @@ figure {
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px; }
-        #colorlib-aside #colorlib-main-menu ul li a {
+        #naran-aside #naran-main-menu ul li a {
           color: rgba(0, 0, 0, 0.7);
           text-decoration: none;
           position: relative;
@@ -148,7 +148,7 @@ figure {
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-          #colorlib-aside #colorlib-main-menu ul li a:after {
+          #naran-aside #naran-main-menu ul li a:after {
             content: "";
             position: absolute;
             height: 1px;
@@ -167,37 +167,37 @@ figure {
             -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-          #colorlib-aside #colorlib-main-menu ul li a:hover {
+          #naran-aside #naran-main-menu ul li a:hover {
             text-decoration: none;
             color: black; }
-            #colorlib-aside #colorlib-main-menu ul li a:hover:after {
+            #naran-aside #naran-main-menu ul li a:hover:after {
               visibility: visible;
               -webkit-transform: scaleX(1);
               -moz-transform: scaleX(1);
               -ms-transform: scaleX(1);
               -o-transform: scaleX(1);
               transform: scaleX(1); }
-        #colorlib-aside #colorlib-main-menu ul li.active a {
+        #naran-aside #naran-main-menu ul li.active a {
           color: #2c98f0; }
-          #colorlib-aside #colorlib-main-menu ul li.active a:after {
+          #naran-aside #naran-main-menu ul li.active a:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
             -moz-transform: scaleX(1);
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-  #colorlib-aside .colorlib-social-media {
+  #naran-aside .naran-social-media {
     display: block;
     width: 100%;
     text-align: center; 
     margin-bottom: 1.5em; }
-    #colorlib-aside .colorlib-social-media a {
+    #naran-aside .naran-social-media a {
       display: inline-block;
       font-size: 30px;
       padding-right: 0.5em;
       color: rgba(0, 0, 0, 0.7);
       line-height: 40px; }
-  #colorlib-aside .colorlib-footer {
+  #naran-aside .naran-footer {
     font-size: 15px;
     text-align: center;
     font-weight: 400;
@@ -205,23 +205,23 @@ figure {
     padding: 0 20px;
     width: 100%; }
     @media screen and (max-width: 768px) {
-      #colorlib-aside .colorlib-footer {
+      #naran-aside .naran-footer {
         position: relative;
         bottom: 0; } }
-    #colorlib-aside .colorlib-footer span {
+    #naran-aside .naran-footer span {
       display: block; }
-    #colorlib-aside .colorlib-footer ul {
+    #naran-aside .naran-footer ul {
       padding: 0;
       margin: 0; }
-      #colorlib-aside .colorlib-footer ul li {
+      #naran-aside .naran-footer ul li {
         padding: 0;
         margin: 0;
         display: inline;
         list-style: none; }
-        #colorlib-aside .colorlib-footer ul li a {
+        #naran-aside .naran-footer ul li a {
           color: rgba(255, 255, 255, 0.3);
           padding: 4px; }
-          #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
+          #naran-aside .naran-footer ul li a:hover, #naran-aside .naran-footer ul li a:active, #naran-aside .naran-footer ul li a:focus {
             text-decoration: none;
             outline: none;
             color: #2c98f0; }
@@ -230,112 +230,112 @@ figure {
   max-width: 1170px;
   margin: 0 auto; }
 
-#colorlib-main {
+#naran-main {
   width: calc(100% - 300px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    #colorlib-main {
+    #naran-main {
       width: 100%;
     } 
   }
 
-#colorlib-hero {
+#naran-hero {
   min-height: 500px;
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
   /* margin-bottom: 10em; */
   clear: both; }
-#colorlib-hero .flexslider {
+#naran-hero .flexslider {
     border: none;
     z-index: 1;
     margin-bottom: 0; }
-    #colorlib-hero .flexslider .slides {
+    #naran-hero .flexslider .slides {
       position: relative;
       overflow: visible; }
-      #colorlib-hero .flexslider .slides li {
+      #naran-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
         min-height: 400px;
         position: relative; }
-    #colorlib-hero .flexslider .flex-control-nav {
+    #naran-hero .flexslider .flex-control-nav {
       bottom: 20px;
       z-index: 1000;
       left: 20px;
       float: left;
       width: auto; }
       @media screen and (max-width: 768px) {
-        #colorlib-hero .flexslider .flex-control-nav {
+        #naran-hero .flexslider .flex-control-nav {
           right: 20px;
           top: 100px; } }
-      #colorlib-hero .flexslider .flex-control-nav li {
+      #naran-hero .flexslider .flex-control-nav li {
         display: block;
         margin-bottom: 10px; }
-        #colorlib-hero .flexslider .flex-control-nav li a {
+        #naran-hero .flexslider .flex-control-nav li a {
           background: rgba(0, 0, 0, 0.5);
           -webkit-box-shadow: none;
           box-shadow: none;
           width: 12px;
           height: 12px;
           cursor: pointer; }
-          #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
+          #naran-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             background: transparent;
             border: 2px solid #2c98f0; }
-    #colorlib-hero .flexslider .flex-direction-nav {
+    #naran-hero .flexslider .flex-direction-nav {
       display: none; }
-    #colorlib-hero .flexslider .slider-text {
+    #naran-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
       min-height: 500px;
       z-index: 9; }
-      #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+      #naran-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
         min-height: 700px;
         padding: 2.5em;
         position: relative; }
         @media screen and (max-width: 768px) {
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+          #naran-hero .flexslider .slider-text > .slider-text-inner {
             text-align: center; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #naran-hero .flexslider .slider-text > .slider-text-inner h1, #naran-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
           color: black;
           font-family: "Playfair Display", Georgia, serif; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+        #naran-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 60px;
           line-height: 1.3;
           font-weight: 700; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+            #naran-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #naran-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
           font-family: "Quicksand", Arial, sans-serif; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
+          #naran-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
             border-bottom: 1px solid rgba(44, 152, 240, 0.7); }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
+        #naran-hero .flexslider .slider-text > .slider-text-inner .heading-section {
           font-size: 50px; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
+            #naran-hero .flexslider .slider-text > .slider-text-inner .heading-section {
               font-size: 30px; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner s
-.colorlib-lead {
+        #naran-hero .flexslider .slider-text > .slider-text-inner s
+.naran-lead {
           font-size: 20px;
           color: #fff; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
+        #naran-hero .flexslider .slider-text > .slider-text-inner p {
           margin-bottom: 0; }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+        #naran-hero .flexslider .slider-text > .slider-text-inner .btn {
           font-size: 12px;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -343,20 +343,20 @@ figure {
           padding: 10px 15px !important;
           border: none;
           font-weight: 400; }
-          #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+          #naran-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: #000;
             border: 1px solid #000;
             background: transparent !important; }
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
+            #naran-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
               background: transparent !important;
               border: 1px solid #000 !important; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
+            #naran-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
 
 body.offcanvas {
   overflow-x: hidden; }
-  body.offcanvas #colorlib-aside {
+  body.offcanvas #naran-aside {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -366,7 +366,7 @@ body.offcanvas {
     background: #f2f3f7;
     z-index: 999;
     position: fixed; }
-  body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
+  body.offcanvas #naran-main, body.offcanvas .naran-nav-toggle {
     top: 0;
     -moz-transform: translateX(300px);
     -webkit-transform: translateX(300px);
@@ -374,54 +374,54 @@ body.offcanvas {
     -o-transform: translateX(300px);
     transform: translateX(300px); }
 
-.colorlib-narrow-content {
+.naran-narrow-content {
   padding: 0 2.5em; }
   @media screen and (max-width: 768px) {
-    .colorlib-narrow-content {
+    .naran-narrow-content {
       padding: 0; } }
 
 .no-gutters {
   margin: 0;
   padding: 0; }
 
-.colorlib-experience,
-.colorlib-skills,
-.colorlib-education,
-.colorlib-blog,
-.colorlib-work,
-.colorlib-about,
-.colorlib-services,
-.colorlib-contact {
+.naran-experience,
+.naran-skills,
+.naran-education,
+.naran-blog,
+.naran-work,
+.naran-about,
+.naran-services,
+.naran-contact {
   padding-top: 4em;
   padding-bottom: 4em;
   clear: both;
   width: 100%;
   display: block; }
   @media screen and (max-width: 768px) {
-    .colorlib-experience,
-    .colorlib-skills,
-    .colorlib-education,
-    .colorlib-blog,
-    .colorlib-work,
-    .colorlib-about,
-    .colorlib-services,
-    .colorlib-contact {
+    .naran-experience,
+    .naran-skills,
+    .naran-education,
+    .naran-blog,
+    .naran-work,
+    .naran-about,
+    .naran-services,
+    .naran-contact {
       /* padding-top: 5em; */
       /* padding-bottom: 8em; */
       padding-left: 1em;
       padding-right: 1em;
    } }
 
-.colorlib-skills,
-.colorlib-services {
+.naran-skills,
+.naran-services {
   padding-top: 0em;
 }
 
-.colorlib-contact {
+.naran-contact {
   background: #f2f3f7;
 }
 
-.colorlib-skills .colorlib-heading {
+.naran-skills .naran-heading {
   padding-top: 3em;
 }
 
@@ -431,7 +431,7 @@ body.offcanvas {
   background-repeat: no-repeat;
   position: relative; }
 
-.colorlib-heading {
+.naran-heading {
   font-size: 12px;
   margin-bottom: 3em;
   font-weight: 500;
@@ -441,10 +441,10 @@ body.offcanvas {
   color: black;
   line-height: 1.8;
   position: relative; }
-  .colorlib-heading span {
+  .naran-heading span {
     display: block; }
   @media screen and (max-width: 768px) {
-    .colorlib-heading {
+    .naran-heading {
       margin-bottom: 3em; }
 }
 
@@ -842,13 +842,13 @@ body.offcanvas {
     .progress-bar.color-6 span {
       color: #4054b2; }
 
-.colorlib-feature {
+.naran-feature {
   text-align: left;
   width: 100%;
   float: left;
   margin-bottom: 40px;
   position: relative; }
-  .colorlib-feature .colorlib-icon {
+  .naran-feature .naran-icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -862,35 +862,35 @@ body.offcanvas {
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px; }
-    .colorlib-feature .colorlib-icon i {
+    .naran-feature .naran-icon i {
       display: table-cell;
       vertical-align: middle;
       color: #2c98f0;
       font-size: 60px;
       height: 100px; }
       @media screen and (max-width: 1200px) {
-        .colorlib-feature .colorlib-icon i {
+        .naran-feature .naran-icon i {
           font-size: 40px; } }
-  .colorlib-feature .colorlib-text {
+  .naran-feature .naran-text {
     padding-left: 120px;
     width: 100%; }
-    .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
+    .naran-feature .naran-text h2, .naran-feature .naran-text h3 {
       margin: 0;
       padding: 0; }
-    .colorlib-feature .colorlib-text h3 {
+    .naran-feature .naran-text h3 {
       font-weight: 500;
       margin-bottom: 20px;
       color: rgba(0, 0, 0, 0.7);
       font-size: 14px;
       letter-spacing: 3px;
       text-transform: uppercase; }
-  .colorlib-feature.colorlib-feature-sm .colorlib-text {
+  .naran-feature.naran-feature-sm .naran-text {
     margin-top: 30px; }
-  .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+  .naran-feature.naran-feature-sm .naran-icon i {
     color: #2c98f0;
     font-size: 40px; }
     @media screen and (max-width: 1200px) {
-      .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
+      .naran-feature.naran-feature-sm .naran-icon i {
         font-size: 54px; } }
 
 .blog-entry {
@@ -1060,17 +1060,17 @@ body.offcanvas {
 .btn-load-more {
   width: 100%; }
 
-#colorlib-counter {
+#naran-counter {
   position: relative;
   clear: both;
   margin-bottom: 5em; }
 
-.colorlib-counters {
+.naran-counters {
   padding: 3em 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center; }
-  .colorlib-counters .overlay {
+  .naran-counters .overlay {
     z-index: 0;
     position: absolute;
     bottom: 0;
@@ -1078,13 +1078,13 @@ body.offcanvas {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.4); }
-  .colorlib-counters .icon {
+  .naran-counters .icon {
     width: 100px;
     height: 100px;
     display: table;
     margin: 0 auto;
     margin-bottom: 20px; }
-    .colorlib-counters .icon i {
+    .naran-counters .icon i {
       display: table-cell;
       vertical-align: middle;
       width: 100px;
@@ -1096,9 +1096,9 @@ body.offcanvas {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       border-radius: 50%; }
-  .colorlib-counters .counter-wrap {
+  .naran-counters .counter-wrap {
     border: 1px solid red !important; }
-  .colorlib-counters .colorlib-counter {
+  .naran-counters .naran-counter {
     font-size: 40px;
     display: block;
     color: white;
@@ -1106,7 +1106,7 @@ body.offcanvas {
     width: 100%;
     font-weight: 700;
     margin-bottom: .3em; }
-  .colorlib-counters .colorlib-counter-label {
+  .naran-counters .naran-counter-label {
     color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     font-size: 14px;
@@ -1114,11 +1114,11 @@ body.offcanvas {
     margin-bottom: 2em;
     display: block; }
 
-.colorlib-social {
+.naran-social {
   padding: 0;
   margin: 0;
   text-align: center; }
-  .colorlib-social li {
+  .naran-social li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -1126,7 +1126,7 @@ body.offcanvas {
     display: inline-block;
     zoom: 1;
     *display: inline; }
-    .colorlib-social li a {
+    .naran-social li a {
       font-size: 22px;
       color: #000;
       padding: 10px;
@@ -1139,11 +1139,11 @@ body.offcanvas {
       -ms-border-radius: 7px;
       border-radius: 7px; }
       @media screen and (max-width: 768px) {
-        .colorlib-social li a {
+        .naran-social li a {
           padding: 10px 8px; } }
-      .colorlib-social li a:hover {
+      .naran-social li a:hover {
         color: #2c98f0; }
-      .colorlib-social li a:hover, .colorlib-social li a:active, .colorlib-social li a:focus {
+      .naran-social li a:hover, .naran-social li a:active, .naran-social li a:focus {
         outline: none;
         text-decoration: none;
         color: #2c98f0; }
@@ -1155,7 +1155,7 @@ body.offcanvas {
     #map {
       height: 200px; } }
 
-.colorlib-bg-color {
+.naran-bg-color {
   background: #fafafa;
   position: relative; }
 
@@ -1333,17 +1333,17 @@ body.offcanvas {
 #message {
   height: 200px; }
 
-.colorlib-nav-toggle {
+.naran-nav-toggle {
   cursor: pointer;
   text-decoration: none; }
-  .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
+  .naran-nav-toggle.active i::before, .naran-nav-toggle.active i::after {
     background: #000; }
-  .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
+  .naran-nav-toggle.dark.active i::before, .naran-nav-toggle.dark.active i::after {
     background: #000; }
-  .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+  .naran-nav-toggle:hover, .naran-nav-toggle:focus, .naran-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
-  .colorlib-nav-toggle i {
+  .naran-nav-toggle i {
     position: relative;
     display: -moz-inline-stack;
     display: inline-block;
@@ -1359,7 +1359,7 @@ body.offcanvas {
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
+    .naran-nav-toggle i::before, .naran-nav-toggle i::after {
       content: '';
       width: 30px;
       height: 2px;
@@ -1369,35 +1369,35 @@ body.offcanvas {
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
-  .colorlib-nav-toggle.dark i {
+  .naran-nav-toggle.dark i {
     position: relative;
     color: #000;
     background: #000;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle.dark i::before, .colorlib-nav-toggle.dark i::after {
+    .naran-nav-toggle.dark i::before, .naran-nav-toggle.dark i::after {
       background: #000;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
 
-.colorlib-nav-toggle i::before {
+.naran-nav-toggle i::before {
   top: -7px; }
 
-.colorlib-nav-toggle i::after {
+.naran-nav-toggle i::after {
   bottom: -7px; }
 
-.colorlib-nav-toggle:hover i::before {
+.naran-nav-toggle:hover i::before {
   top: -10px; }
 
-.colorlib-nav-toggle:hover i::after {
+.naran-nav-toggle:hover i::after {
   bottom: -10px; }
 
-.colorlib-nav-toggle.active i {
+.naran-nav-toggle.active i {
   background: transparent; }
 
-.colorlib-nav-toggle.active i::before {
+.naran-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1405,7 +1405,7 @@ body.offcanvas {
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg); }
 
-.colorlib-nav-toggle.active i::after {
+.naran-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1413,7 +1413,7 @@ body.offcanvas {
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 
-.colorlib-nav-toggle {
+.naran-nav-toggle {
   position: fixed;
   left: -5px;
   top: 0px;
@@ -1426,7 +1426,7 @@ body.offcanvas {
   -o-transition: 0.5s;
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
-    .colorlib-nav-toggle {
+    .naran-nav-toggle {
       opacity: 1;
       visibility: visible; } }
 
