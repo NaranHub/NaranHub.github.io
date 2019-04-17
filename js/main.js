@@ -22,12 +22,15 @@
 		},
 			any: function() {
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		},
+			anyButIOS: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
 
 	var fullHeight = function() {
 
-		if ( !isMobile.any() ) {
+		if ( !isMobile.anyButIOS() ) {
 			$('.js-fullheight').css('height', $(window).height());
 			$(window).resize(function(){
 				$('.js-fullheight').css('height', $(window).height());
