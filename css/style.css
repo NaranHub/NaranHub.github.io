@@ -190,6 +190,7 @@ figure {
     display: block;
     width: 100%;
     text-align: center; 
+    margin-top: 1.5em;
     margin-bottom: 1.5em; }
     #naran-aside .naran-social-media a {
       display: inline-block;
