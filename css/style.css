@@ -893,6 +893,11 @@ body.offcanvas {
       .naran-feature.naran-feature-sm .naran-icon i {
         font-size: 54px; } }
 
+.min-height {
+  min-height: 470px;
+  /* Workaround to avoid a 1px col-md-5 in small screens */
+}
+
 .blog-entry {
   width: 100%;
   float: left;
