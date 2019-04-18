@@ -412,9 +412,9 @@ body.offcanvas {
       padding-right: 1em;
    } }
 
-.naran-skills,
+.naran-about,
 .naran-services {
-  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 .naran-contact {
