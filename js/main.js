@@ -92,14 +92,14 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  k * 25, 'easeInOutExpo' ); /* Delay from previous animation, default: k * 200 */
 					});
 					
-				}, 100);
+				}, 100); 
 				
 			}
 
-		} , { offset: '85%' } );
+		} , { offset: '85%' } ); /* Where in scroll the animatino is triggered */
 	};
 
 
