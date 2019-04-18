@@ -2,8 +2,6 @@
 	
 	'use strict';
 
-
-
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -38,7 +36,6 @@
 		}
 
 	};
-
 
 	var counter = function() {
 		$('.js-counter').countTo({
@@ -190,13 +187,20 @@
 
 		var $section = $('section[data-section]');
 		
-		$section.waypoint(function(direction) {
-		  	
+		$section.waypoint(function(direction) {	  	
 		  	if (direction === 'down') {
-		    	navActive($(this.element).data('section'));
+				navActive($(this.element).data('section'));
 		  	}
 		}, {
-	  		offset: '150px'
+			// offset: '150px'
+			// Create special offset for contact so that it's highlighted even if it doesn't fill the screen.
+			offset: function() {
+				if ($(this.element).data('section') === 'contact') {
+					return 500;
+				} else {
+					return 150;
+				}
+			}
 		});
 
 		$section.waypoint(function(direction) {
@@ -204,15 +208,10 @@
 		    	navActive($(this.element).data('section'));
 		  	}
 		}, {
-		  	offset: function() { return -$(this.element).height() + 155; }
+		  	offset: function() { return -$(this.element).height() + 150; } /* 155 */
 		});
 
 	};
-
-
-
-
-
 
 	var sliderMain = function() {
 		
