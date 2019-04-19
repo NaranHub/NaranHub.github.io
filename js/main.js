@@ -101,7 +101,6 @@
 
 
 	var burgerMenu = function() {
-
 		$('.js-naran-nav-toggle').on('click', function(event){
 			event.preventDefault();
 			var $this = $(this);
@@ -114,14 +113,10 @@
 				$('body').addClass('offcanvas');	
 			}
 		});
-
-
-
 	};
 
 	// Click outside of offcanvass
 	var mobileMenuOutsideClick = function() {
-
 		$(document).click(function (e) {
 			var container = $("#naran-aside, .js-naran-nav-toggle");
 			if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -131,18 +126,15 @@
 				}
 			}
 		});
-
 		$(window).scroll(function(){
 			if ( $('body').hasClass('offcanvas') ) {
     			$('body').removeClass('offcanvas');
     			$('.js-naran-nav-toggle').removeClass('active');
 	    	}
 		});
-
 	};
 
 	var clickMenu = function() {
-
 		$('#navbar a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
@@ -151,7 +143,6 @@
 					return true;
 				}
 				else if ( section && $('[data-section="' + section + '"]').length ) {
-					console.log(section);
 			    	$('html, body').animate({
 			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 0 /* No offset. Default: -55 */
 			    	}, 500);
@@ -166,25 +157,19 @@
 			event.preventDefault();
 			return false;
 		});
-
-
 	};
 
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
-
 		var $el = $('#navbar > ul');
 		$el.find('li').removeClass('active');
 		$el.each(function(){
 			$(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
 		});
-
 	};
 
 	var navigationSection = function() {
-
 		var $section = $('section[data-section]');
-		
 		$section.waypoint(function(direction) {	  	
 		  	if (direction === 'down') {
 				navActive($(this.element).data('section'));
@@ -200,7 +185,6 @@
 				}
 			}
 		});
-
 		$section.waypoint(function(direction) {
 		  	if (direction === 'up') {
 		    	navActive($(this.element).data('section'));
@@ -208,11 +192,9 @@
 		}, {
 		  	offset: function() { return -$(this.element).height() + 150; } /* 155 */
 		});
-
 	};
 
 	var sliderMain = function() {
-		
 	  	$('#naran-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
@@ -231,11 +213,24 @@
 			}
 
 	  	});
+	};
 
+	// Replace send-message form's action with the real call to formspree when the end user submits the form. 
+	// This is done to avoid including my email address in the html code and make it more difficult for mail spam robots.
+	var sendMessage = function () {
+		var messageForm = $('#send-message');
+		messageForm.on('submit', function(e) {
+			messageForm.attr('action', 'https://formspree.io/' + decode('&#114;&#117;&#098;&#101;&#110;&#064;&#110;&#097;&#114;&#097;&#110;&#046;&#105;&#111;'));
+		});
+	};
+
+	var decode = function (str) {
+		return str.replace(/&#(\d+);/g, function(match, dec) {
+			return String.fromCharCode(dec);
+		});
 	};
 
 	var stickyFunction = function() {
-
 		var h = $('.image-content').outerHeight();
 
 		if ($(window).width() <= 992 ) {
@@ -260,16 +255,9 @@
 
 				$("#sticky_item").stick_in_parent();
 			}
-			
-
-			
-
 		});
-
 		$('.sticky-parent').css('height', h);
-
 		$("#sticky_item").stick_in_parent();
-
 	};
 
 	// Document on load.
@@ -285,9 +273,9 @@
 		navigationSection();
 		// windowScroll();
 
-
 		mobileMenuOutsideClick();
 		sliderMain();
+		sendMessage();
 		stickyFunction();
 	});
 

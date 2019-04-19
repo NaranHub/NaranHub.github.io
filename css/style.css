@@ -1331,10 +1331,13 @@ body.offcanvas {
   border-radius: 0; }
   .form-control:active, .form-control:focus {
     outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     border: 2px solid #2c98f0 !important;
     border-color: transparent; }
+/*   .form-control:invalid {
+      outline: none;
+      border: 2px solid #ec5453 !important;
+      border-color: transparent; }
+ */  
 
 #message {
   height: 200px; }

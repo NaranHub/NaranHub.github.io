@@ -701,21 +701,21 @@
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1">
-									<form action="#">
+									<form id="send-message" action="#" method="POST">
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name" disabled>
+											<input type="text" class="form-control" placeholder="Name" name="name">
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email" required disabled>
+											<input type="email" class="form-control" placeholder="Email" name="_replyto" required>
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject" disabled>
+											<input type="text" class="form-control" placeholder="Subject" name="_subject">
 										</div>
 										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required disabled></textarea>
+											<textarea id="message" cols="30" rows="7" class="form-control" placeholder="Message" name="comments" required></textarea>
 										</div>
 										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message (Coming soon)" onclick="gtag('event', 'contact', {'event_category': 'message'});" disabled>
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message" onclick="gtag('event', 'contact', {'event_category': 'message'});">
 										</div>
 									</form>
 								</div>
