@@ -224,14 +224,34 @@
 		});
 	};
 
-	// Sends a telegram notification when the page is loaded
-	var sendNotification = function () {
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "https://api.telegram.org/bot" + decode('&#054;&#048;&#051;&#048;&#051;&#057;&#056;&#054;&#048;:&#065;&#065;&#069;&#074;&#051;&#107;&#077;&#055;&#108;&#049;&#065;&#086;&#051;&#083;&#101;&#074;&#099;&#114;&#110;&#080;&#068;&#112;&#097;&#082;&#100;&#101;&#120;&#088;&#087;&#054;&#085;&#109;&#055;&#089;&#065;') + "/sendMessage", true);
-		xhr.setRequestHeader('Content-Type', 'application/json');
-		xhr.send(JSON.stringify({
+	// Try to get IP details from the visitor when the page loads
+	var getVisitorDetails = function () {
+		var ipRequest = new XMLHttpRequest();
+		ipRequest.open("GET", "https://ipapi.co/json/", true);
+
+		ipRequest.onload = function() {
+			var message = "Live visitor at naran.io ";
+			if (ipRequest.status >= 200 && ipRequest.status < 400) {
+				message = message + ipRequest.responseText;
+			} 
+			sendNotification(message);
+		};
+
+		ipRequest.onerror = function () {
+			sendNotification("Live visitor at naran.io { no details }");
+		};
+
+		ipRequest.send();
+	};
+
+	// Sends a telegram notification
+	var sendNotification = function (message) {	
+		var telegramRequest = new XMLHttpRequest();
+		telegramRequest.open("POST", "https://api.telegram.org/bot" + decode('&#054;&#048;&#051;&#048;&#051;&#057;&#056;&#054;&#048;:&#065;&#065;&#069;&#074;&#051;&#107;&#077;&#055;&#108;&#049;&#065;&#086;&#051;&#083;&#101;&#074;&#099;&#114;&#110;&#080;&#068;&#112;&#097;&#082;&#100;&#101;&#120;&#088;&#087;&#054;&#085;&#109;&#055;&#089;&#065;') + "/sendMessage", true);
+		telegramRequest.setRequestHeader('Content-Type', 'application/json');
+		telegramRequest.send(JSON.stringify({
     		chat_id: decode('&#045;&#051;&#057;&#052;&#051;&#048;&#049;&#054;&#055;&#056;'),
-    		text: "Live visitor at naran.io"
+    		text: message
 		}));
 	};
 
@@ -285,7 +305,7 @@
 		mobileMenuOutsideClick();
 		sliderMain();
 		sendMessage();
-		sendNotification();
+		getVisitorDetails();
 		stickyFunction();
 	});
 
